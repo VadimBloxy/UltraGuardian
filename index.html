@@ -124,10 +124,6 @@
             cursor: not-allowed;
         }
 
-        .download {
-            display: none;
-        }
-
         footer {
             background: #000;
             text-align: center;
@@ -164,7 +160,7 @@
         <div class="card"><h3>📁 Карантин</h3><p>Изоляция файлов.</p></div>
         <div class="card"><h3>📊 Отчёты</h3><p>Логи.</p></div>
         <div class="card"><h3>⚡ Быстро</h3><p>Оптимизация macOS.</p></div>
-        <div class="card"><h3>🧠 Безопасность</h3><p>Пока что нулевая!!!.</p></div>
+        <div class="card"><h3>🧠 Безопасность</h3><p>Пока что нулевая!!!</p></div>
     </div>
 </section>
 
@@ -190,7 +186,18 @@
             <td class="available">1894</td>
         </tr>
 
-        <tr><td>1.8</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td><td class="locked">—</td></tr>
+        <!-- АКТИВНАЯ 1.8 -->
+        <tr>
+            <td>1.8</td>
+            <td class="available">Доступна</td>
+            <td>
+                <a class="btn-download" href="#">
+                    Скачать
+                </a>
+            </td>
+            <td class="available">9827</td>
+        </tr>
+
         <tr><td>1.9</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td><td class="locked">—</td></tr>
         <tr><td>2.0</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td><td class="locked">—</td></tr>
         <tr><td>2.1</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td><td class="locked">—</td></tr>
@@ -204,12 +211,6 @@
         <tr><td>2.9</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td><td class="locked">—</td></tr>
         <tr><td>3.0</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td><td class="locked">—</td></tr>
     </table>
-</section>
-
-<section class="download">
-    <h2>Скачать Ultra Guard</h2>
-    <p>Официальная версия для macOS</p>
-    <a href="#">⬇ Скачать</a>
 </section>
 
 <footer>
