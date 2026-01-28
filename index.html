@@ -73,8 +73,6 @@
             margin-top: 0;
         }
 
-        /* ===== ТАБЛИЦА ВЕРСИЙ ===== */
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -116,12 +114,6 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn-download:hover {
-            background: darkred;
-            box-shadow: 0 0 15px red;
         }
 
         .btn-disabled {
@@ -132,37 +124,9 @@
             cursor: not-allowed;
         }
 
-        /* ===== DOWNLOAD ===== */
-
+        /* 🔒 НЕ УДАЛЯЕМ, А ПРОСТО ПРЯЧЕМ */
         .download {
-            text-align: center;
-            background: #050505;
-            border-top: 3px solid red;
-            border-bottom: 3px solid red;
-        }
-
-        .download a {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 20px 40px;
-            font-size: 22px;
-            color: white;
-            background: red;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .download a:hover {
-            background: darkred;
-            box-shadow: 0 0 25px red;
-        }
-
-        .warning {
-            margin-top: 20px;
-            color: #ff6666;
-            font-size: 14px;
+            display: none;
         }
 
         footer {
@@ -189,114 +153,57 @@
     <h2>Что такое Ultra Guard?</h2>
     <p>
         Ultra Guard — это кастомный антивирус для macOS, созданный для
-        обнаружения подозрительных файлов, защиты системы
-        кибербезопасности.  
-        Минималистичный интерфейс, маленькая скорость и полный контроль.
+        обнаружения подозрительных файлов и обучения кибербезопасности.
     </p>
 </section>
 
 <section>
     <h2>Возможности</h2>
-
     <div class="features">
-        <div class="card">
-            <h3>🛡 Сканирование</h3>
-            <p>Проверка файлов и папок на угрозы и подозрительную активность.</p>
-        </div>
-
-        <div class="card">
-            <h3>⚠ Defender Mode</h3>
-            <p>Активная защита системы в реальном времени доступна только в версии 1.7.</p>
-        </div>
-
-        <div class="card">
-            <h3>📁 Карантин</h3>
-            <p>Автоматическое перемещение опасных файлов.</p>
-        </div>
-
-        <div class="card">
-            <h3>📊 Отчёты</h3>
-            <p>Логи проверок и действия антивируса.</p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Быстро</h3>
-            <p>Оптимизировано для macOS Intel и Apple Silicon.</p>
-        </div>
-
-        <div class="card">
-            <h3>🧠 Обучение</h3>
-            <p>Проект для изучения Python и принципов защиты.</p>
-        </div>
+        <div class="card"><h3>🛡 Сканирование</h3><p>Проверка файлов.</p></div>
+        <div class="card"><h3>⚠ Defender Mode</h3><p>Доступен в 1.7.</p></div>
+        <div class="card"><h3>📁 Карантин</h3><p>Изоляция файлов.</p></div>
+        <div class="card"><h3>📊 Отчёты</h3><p>Логи.</p></div>
+        <div class="card"><h3>⚡ Быстро</h3><p>Оптимизация macOS.</p></div>
+        <div class="card"><h3>🧠 Обучение</h3><p>Учебный проект.</p></div>
     </div>
 </section>
-
-<!-- ===== ВЕРСИИ ===== -->
 
 <section>
     <h2>Версии Ultra Guard</h2>
 
     <table>
-        <tr>
-            <th>Версия</th>
-            <th>Статус</th>
-            <th>Загрузка</th>
-        </tr>
+        <tr><th>Версия</th><th>Статус</th><th>Загрузка</th></tr>
 
-        <tr>
-            <td>1.7</td>
-            <td class="available">Доступна</td>
-            <td>
-                <a class="btn-download" href="https://github.com/VadimBloxy/UltraGuardian/releases/download/Ug/UGuardianDownloader.zip">
-                    Скачать
-                </a>
-            </td>
-        </tr>
+        <tr><td>1.7</td><td class="available">Доступна</td><td><a class="btn-download" href="https://github.com/VadimBloxy/UltraGuardian/releases/download/Ug/UGuardianDownloader.zip">Скачать</a></td></tr>
 
-        <tr>
-            <td>1.8</td>
-            <td class="locked">Пропуск</td>
-            <td><span class="btn-disabled">Недоступно</span></td>
-        </tr>
-
-        <tr>
-            <td>2.0</td>
-            <td class="locked">Пропуск</td>
-            <td><span class="btn-disabled">Недоступно</span></td>
-        </tr>
-
-        <tr>
-            <td>2.3</td>
-            <td class="locked">Пропуск</td>
-            <td><span class="btn-disabled">Недоступно</span></td>
-        </tr>
-
-        <tr>
-            <td>2.5</td>
-            <td class="locked">Пропуск</td>
-            <td><span class="btn-disabled">Недоступно</span></td>
-        </tr>
+        <tr><td>1.8</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>1.9</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.0</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.1</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.2</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.3</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.4</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.5</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.6</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.7</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.8</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>2.9</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
+        <tr><td>3.0</td><td class="locked">В разработке</td><td><span class="btn-disabled">Скоро</span></td></tr>
     </table>
 </section>
 
+<!-- БЛОК СКАЧИВАНИЯ НЕ УДАЛЁН, ПРОСТО СКРЫТ -->
+
 <section class="download">
     <h2>Скачать Ultra Guard</h2>
-
     <p>Официальная версия для macOS</p>
-
-    <a href="https://github.com/VadimBloxy/UltraGuardian/releases/download/Ug/UGuardianDownloader.zip">
-        ⬇ Скачать для macOS
-    </a>
-
-    <p class="warning">
-        ⚠ Приложение создано в образовательных целях.  
-        macOS может показать предупреждение безопасности.
-    </p>
+    <a href="#">⬇ Скачать</a>
 </section>
 
 <footer>
     © 2026 <span>Ultra Guard</span><br>
-    Разработано VadimBloxy • macOS Security Project
+    Разработано VadimBloxy
 </footer>
 
 </body>
