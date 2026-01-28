@@ -73,6 +73,67 @@
             margin-top: 0;
         }
 
+        /* ===== ТАБЛИЦА ВЕРСИЙ ===== */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: #0f0f0f;
+        }
+
+        th, td {
+            border: 1px solid red;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        th {
+            background: #1a0000;
+            color: red;
+        }
+
+        tr:hover {
+            background: #140000;
+        }
+
+        .available {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .locked {
+            color: #ff4444;
+            opacity: 0.6;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 10px 25px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-download:hover {
+            background: darkred;
+            box-shadow: 0 0 15px red;
+        }
+
+        .btn-disabled {
+            padding: 10px 25px;
+            background: #333;
+            color: #777;
+            border-radius: 8px;
+            cursor: not-allowed;
+        }
+
+        /* ===== DOWNLOAD ===== */
+
         .download {
             text-align: center;
             background: #050505;
@@ -130,7 +191,7 @@
         Ultra Guard — это кастомный антивирус для macOS, созданный для
         обнаружения подозрительных файлов, защиты системы
         кибербезопасности.  
-        Минималистичный интерфейс, маленькая скорость и полный контроль. 1894
+        Минималистичный интерфейс, маленькая скорость и полный контроль.
     </p>
 </section>
 
@@ -170,6 +231,54 @@
     </div>
 </section>
 
+<!-- ===== ВЕРСИИ ===== -->
+
+<section>
+    <h2>Версии Ultra Guard</h2>
+
+    <table>
+        <tr>
+            <th>Версия</th>
+            <th>Статус</th>
+            <th>Загрузка</th>
+        </tr>
+
+        <tr>
+            <td>1.7</td>
+            <td class="available">Доступна</td>
+            <td>
+                <a class="btn-download" href="https://github.com/VadimBloxy/UltraGuardian/releases/download/Ug/UGuardianDownloader.zip">
+                    Скачать
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>1.8</td>
+            <td class="locked">Пропуск</td>
+            <td><span class="btn-disabled">Недоступно</span></td>
+        </tr>
+
+        <tr>
+            <td>2.0</td>
+            <td class="locked">Пропуск</td>
+            <td><span class="btn-disabled">Недоступно</span></td>
+        </tr>
+
+        <tr>
+            <td>2.3</td>
+            <td class="locked">Пропуск</td>
+            <td><span class="btn-disabled">Недоступно</span></td>
+        </tr>
+
+        <tr>
+            <td>2.5</td>
+            <td class="locked">Пропуск</td>
+            <td><span class="btn-disabled">Недоступно</span></td>
+        </tr>
+    </table>
+</section>
+
 <section class="download">
     <h2>Скачать Ultra Guard</h2>
 
@@ -186,14 +295,9 @@
 </section>
 
 <footer>
-    © 2026 <span>Ultra Guard</span>  
-    <br>
+    © 2026 <span>Ultra Guard</span><br>
     Разработано VadimBloxy • macOS Security Project
 </footer>
 
 </body>
 </html>
-
-
-
-
