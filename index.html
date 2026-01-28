@@ -2,92 +2,120 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Ultra Guard — защита для macOS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultra Guardian</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
             margin: 0;
-            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #0d0d0f, #1c1f26);
+            color: #ffffff;
         }
 
         header {
-            padding: 50px 20px;
+            padding: 80px 20px;
+            text-align: center;
         }
 
         header h1 {
-            font-size: 48px;
+            font-size: 56px;
             margin-bottom: 10px;
         }
 
         header p {
             font-size: 20px;
-            margin-bottom: 30px;
+            opacity: 0.85;
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+        .download {
+            margin-top: 40px;
         }
 
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background-color: #4CAF50;
+        .download a {
+            background: #0a84ff;
             color: white;
-            transition: transform 0.2s, background-color 0.2s;
+            padding: 16px 36px;
+            font-size: 18px;
+            border-radius: 14px;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.2s;
+            display: inline-block;
         }
 
-        button:hover {
+        .download a:hover {
+            background: #3395ff;
             transform: scale(1.05);
-            background-color: #45a049;
+        }
+
+        .info {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.06);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #0a84ff;
         }
 
         footer {
-            background-color: #111;
-            color: #aaa;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        a.download-link {
-            text-decoration: none;
-            color: white;
+            text-align: center;
+            padding: 30px;
+            opacity: 0.6;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ultra Guardian</h1>
-        <p>Защищай свой компьютер и устройства с нашим антивирусом!</p>
-    </header>
 
-    <main>
-        <button>
-            <a href="https://example.com/download/UltraGuardian.exe" class="download-link" target="_blank">Скачать приложение</a>
-        </button>
+<header>
+    <h1>Ultra Guard</h1>
+    <p>Современная защита для macOS</p>
 
-        <button onclick="alert('Ultra Guardian — проект 2026 года. Защищает ваши файлы!')">
-            О проекте
-        </button>
+    <div class="download">
+        <!-- ЗАМЕНИ ССЫЛКУ НА СВОЙ ФАЙЛ -->
+        <a href="UltraGuard-macOS.dmg" download>
+            ⬇ Скачать для macOS
+        </a>
+    </div>
+</header>
 
-        <button onclick="alert('Связаться с нами: support@ultraguardian.com')">
-            Контакты
-        </button>
-    </main>
+<section class="info">
+    <div class="card">
+        <h3>🔒 Защита в реальном времени</h3>
+        <p>Ultra Guard следит за системой macOS и блокирует подозрительные файлы и процессы.</p>
+    </div>
 
-    <footer>
-        <p>© 2026 Ultra Guardian. Все права защищены.</p>
-    </footer>
+    <div class="card">
+        <h3>⚡ Быстрый и лёгкий</h3>
+        <p>Минимальная нагрузка на систему. Работает тихо и эффективно.</p>
+    </div>
+
+    <div class="card">
+        <h3>🍎 Оптимизирован под macOS</h3>
+        <p>Поддержка современных версий macOS, Apple Silicon и Intel.</p>
+    </div>
+
+    <div class="card">
+        <h3>🛡 Defender Mode</h3>
+        <p>Усиленный режим защиты для максимальной безопасности.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Ultra Guard • Только для macOS
+</footer>
+
 </body>
 </html>
